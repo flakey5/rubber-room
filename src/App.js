@@ -18,7 +18,7 @@ const App = () => {
     return (
         <div className='app' style={{ textAlign: 'center' }}>
             <h1>Rubber Room</h1>
-            
+            <i>Crazy? I was crazy once. They locked me in a room. A rubber room. A rubber room with rats. And rats make me crazy.</i>
             <div>
                 <p>How many crazies?</p>
                 <input type='number' onChange={(e) => setCrazyCount(e.target.value)} />
