@@ -11,8 +11,12 @@ const App = () => {
             return;
         }
 
-        const crazy = 'Crazy? I was crazy once. They locked me in a room. A rubber room. A rubber room with rats. And rats make me crazy.';
-        setCrazies(crazy.repeat(crazyCount));
+        let crazy;
+        if (crazyCount > 0)
+            crazy = 'Crazy? I was crazy once. They locked me in a room. A rubber room. A rubber room with rats. And rats make me crazy. ';
+        else
+            crazy = '.yzarc em ekam star dnA .star htiw moor rebbur A .moor rebbur A .moor a ni em dekcol yehT .ecno yzarc saw I ?yzarC ';
+        setCrazies(crazy.repeat(Math.abs(crazyCount)));
     };
 
     return (
